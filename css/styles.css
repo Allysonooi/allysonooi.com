@@ -14,7 +14,7 @@ a:focus {
 
 h1,
 .h1 {
-  font-size: 3.5em;
+  font-size: 4em;
   line-height: 1.15;
   margin-bottom: 30px;
 }
@@ -63,7 +63,7 @@ p {
 body {
   color: #2c2c2c;
   font-size: 14px;
-  font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+  font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif !important;
   overflow-x: hidden;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -108,7 +108,7 @@ body {
   height: 100%;
   width: 100%;
   position: relative;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.45);
 }
 
 .masthead .container {
@@ -128,4 +128,26 @@ body {
   padding: 0 15px;
   width: 100%;
   max-width: 880px;
+}
+
+/* ------------------- S L I D E 1 ------------------- */
+
+.slide {
+  min-height: 100vh;
+  max-height: 999px;
+  padding-top: 100px;
+  color: #FFFFFF;
+  position: relative;
+  overflow: hidden;
+  background-color: rgb(1, 0, 1);
+}
+
+.slide .container {
+  height: 100%;
+  position: relative;
+}
+
+.slide .title {
+  font-size: 5.7em;
+  text-align: center;
 }
