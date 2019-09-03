@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
-<body class="index">
+<body id="home" class="index">
   <div class="masthead">
     <div class="masthead-image" data-parallax="true" style="background-image:url('img/masthead.jpg');">
       <div class="layer">
@@ -22,19 +22,19 @@
             <div class="menu justify-content-end">
               <ul class="navbar-nav">
                 <li class="nav-item">
-                  <a class="nav-link" href="javascript:void(0)" onclick="scrollToDownload()">
+                  <a class="nav-link" href="javascript:void(0)" onclick="scrollToView('home')">
                     <i class="fas fa-terminal"></i>
                     <p>H O M E</p>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="javascript:void(0)" onclick="scrollToDownload()">
+                  <a class="nav-link" href="javascript:void(0)" onclick="scrollToView('about')">
                     <i class="fas fa-code"></i>
                     <p>A B O U T</p>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="javascript:void(0)" onclick="scrollToDownload()">
+                  <a class="nav-link" href="javascript:void(0)" onclick="scrollToView('experience')">
                     <i class="fas fa-code-branch"></i>
                     <p>E X P E R I E N C E</p>
                   </a>
@@ -62,10 +62,9 @@
         </div>
       </div>
     </div>
-
   </div>
   <div class="main">
-    <div class="slide">
+    <div id="about" class="slide">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
@@ -75,7 +74,7 @@
         </div>
       </div>
     </div>
-    <div class="slide">
+    <div id="experience" class="slide">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
@@ -225,6 +224,11 @@
   <script src="js/scripts.js"></script>
 
   <script>
+    function scrollToView(id) {
+
+      var elmnt = document.getElementById(id);
+      elmnt.scrollIntoView();
+    }
   </script>
 </body>
 </html>
