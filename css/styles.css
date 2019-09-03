@@ -361,6 +361,8 @@ footer h3 {
 .social i {
   font-size: 35px;
   color: white;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .copyright {
