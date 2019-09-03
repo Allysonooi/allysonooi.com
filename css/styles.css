@@ -330,6 +330,26 @@ body {
   border-left: 3px solid var(--main-bg-blue);
 }
 
+.large-screen {
+  display: block;
+}
+
+.small-screen {
+  display: none;
+}
+
+@media (max-width: 768px){
+  .large-screen {
+    display: none;
+  }
+
+  .small-screen {
+    text-align: center;
+    padding-bottom: 10px;
+    display: block;
+  }
+}
+
 /* ------------------- F O O T E R ------------------- */
 
 footer {
@@ -347,7 +367,7 @@ footer h3 {
 }
 
 .footer-description {
-  font-size: 28px;
+  font-size: 2em;
 }
 
 .fa-coffee {
