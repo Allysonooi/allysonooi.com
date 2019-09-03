@@ -1,6 +1,6 @@
 $(document).ready(function() {
   var options = {
-    strings: ["I am <b>Allyson Ooi</b>.", "I aspire to be a <b>Developer</b>.", "You might ask <b>why</b>..", "Well...", "I simply enjoy <b>programming</b>.", ":)"],
+    strings: ["I am <b style='color: #66fcc1;'>Allyson Ooi</b>.", "I aspire to be a <b style='color: #9566fc;'>Developer</b>.", "You might ask <b style='color: #fcf366;'>why</b>..", "Well...", "I simply enjoy <b style='color: #66FCF1;'>programming</b>.", ":)"],
     // Optionally use an HTML element to grab strings from (must wrap each string in a <p>)
     stringsElement: null,
     // typing speed

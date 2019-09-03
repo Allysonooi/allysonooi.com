@@ -1,4 +1,13 @@
 /* ------------------- M A I N ------------------- */
+:root {
+  --main-bg-purple: #9566fc;
+  --main-bg-green: #66fcc1;
+  --main-bg-yellow: #fcf366;
+  --main-bg-blue: #66FCF1;
+  --main-bg-pink: #fc6694;
+  --main-bg-orange: #fcad66;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
@@ -41,12 +50,6 @@ h5, .h5 {
   margin-bottom: 15px;
 }
 
-h6, .h6 {
-  font-size: 0.9em;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
 p {
   line-height: 1.61em;
   font-weight: 300;
@@ -72,6 +75,18 @@ body {
   margin: 0px;
   width: 100%;
   color: rgba(255, 255, 255, 0.5);
+}
+
+.pd20l {
+  padding-left: 20px;
+}
+
+.pd20t {
+  padding-top: 20px;
+}
+
+.pd50t {
+  padding-top: 50px;
 }
 
 /* ------------------- N A V B A R ------------------- */
@@ -233,7 +248,7 @@ body {
 
 .slide {
   min-height: 100vh;
-  max-height: 999px;
+  max-height: 999vh;
   padding-top: 100px;
   color: #FFFFFF;
   position: relative;
@@ -259,4 +274,42 @@ body {
 
 .slide .exp {
   font-size: 4em !important;
+}
+
+/* ------------------- S L I D E 2 : T I M E L I N E ------------------- */
+
+.timeline {
+  padding-top: 20px;
+}
+
+.timeline h2 {
+  font-size: 4em !important;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: 0px;
+}
+
+.timeline .single h3 {
+  font-size: 2em !important;
+  float: right;
+}
+
+.timeline .single h4 {
+  padding-bottom: 10px;
+}
+
+.timeline .single .description {
+  border-left: 3px solid var(--main-bg-green);
+}
+
+.timeline .single .description2 {
+  border-left: 3px solid var(--main-bg-purple);
+}
+
+.timeline .single .description3 {
+  border-left: 3px solid var(--main-bg-yellow);
+}
+
+.timeline .single .description4 {
+  border-left: 3px solid var(--main-bg-blue);
 }
