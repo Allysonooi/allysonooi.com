@@ -89,6 +89,18 @@ body {
   padding-top: 50px;
 }
 
+.pd200t {
+  padding-top: 200px;
+}
+
+.ml-auto {
+  margin-left: auto!important;
+}
+
+.mr-auto {
+  margin-right: auto!important;
+}
+
 /* ------------------- N A V B A R ------------------- */
 
 .menu {
@@ -290,7 +302,7 @@ body {
 }
 
 .timeline .single h3 {
-  font-size: 2em !important;
+  font-size: 2.5em !important;
   float: right;
 }
 
@@ -312,4 +324,41 @@ body {
 
 .timeline .single .description4 {
   border-left: 3px solid var(--main-bg-blue);
+}
+
+/* ------------------- F O O T E R ------------------- */
+
+footer {
+  min-height: 50vh;
+  max-height: 999vh;
+  padding-top: 150px;
+  color: #FFFFFF;
+  position: relative;
+  overflow: hidden;
+  background-color: rgb(1, 0, 1);
+}
+
+footer h3 {
+  text-align: center;
+}
+
+.footer-description {
+  font-size: 28px;
+}
+
+.fa-coffee {
+  display: inline-block;
+  font-size: 100px;
+  vertical-align: middle;
+  text-align: center;
+  padding-left: 10px;
+}
+
+.social i {
+  font-size: 35px;
+  color: white;
+}
+
+.copyright {
+  float: right;
 }
