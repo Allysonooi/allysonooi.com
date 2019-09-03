@@ -199,6 +199,16 @@ body {
   transition: all 300ms ease 0s;
 }
 
+.vertical-nav {
+  display: none;
+}
+
+@media (max-width: 992px){
+  .vertical-nav {
+    display: inline;
+  }
+}
+
 /* ICONS */
 
 .icon{
