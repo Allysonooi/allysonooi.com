@@ -7,48 +7,41 @@ a {
   color: #f96332;
 }
 
-a:hover,
-a:focus {
+a:hover, a:focus {
   color: #f96332;
 }
 
-h1,
-.h1 {
-  font-size: 4em;
+h1, .h1 {
+  font-size: 2.7em !important;
   line-height: 1.15;
   margin-bottom: 30px;
 }
 
-h2,
-.h2 {
+h2, .h2 {
   font-size: 2.5em;
   margin-bottom: 30px;
 }
 
-h3,
-.h3 {
+h3, .h3 {
   font-size: 1.825em;
   margin-bottom: 30px;
   line-height: 1.4em;
 }
 
-h4,
-.h4 {
+h4, .h4 {
   font-size: 1.5em;
   line-height: 1.45em;
   margin-top: 30px;
   margin-bottom: 15px;
 }
 
-h5,
-.h5 {
+h5, .h5 {
   font-size: 1.3em;
   line-height: 1.4em;
   margin-bottom: 15px;
 }
 
-h6,
-.h6 {
+h6, .h6 {
   font-size: 0.9em;
   font-weight: 700;
   text-transform: uppercase;
@@ -80,6 +73,7 @@ body {
   width: 100%;
   color: rgba(255, 255, 255, 0.5);
 }
+
 /* ------------------- N A V B A R ------------------- */
 
 .menu {
@@ -115,11 +109,13 @@ body {
   margin-bottom: 0;
   list-style: none;
 }
+
 @media (min-width: 992px){
   .navbar-nav {
     -ms-flex-direction: row !important;
     flex-direction: row !important;
-}}
+  }
+}
 
 @media screen and (min-width: 992px){
   .navbar-nav .nav-item:not(:last-child) {
@@ -137,23 +133,26 @@ body {
 
 .navbar .navbar-nav .nav-link:not(.btn) {
   text-transform: uppercase;
-  /* font-size: 0.7142em; */
-  font-size: 0.9142em;
+  font-size: 1.0142em;
   padding: 0.6rem 0.7rem;
   line-height: 1.625rem;
 }
 
 .navbar a:not(.btn):not(.dropdown-item) {
-    color: #FFFFFF;
+  color: #FFFFFF;
 }
 
 .navbar a {
-    vertical-align: middle !important;
+  vertical-align: middle !important;
 }
 
 .nav-link {
-    display: block;
-    padding: .5rem 1rem;
+  display: block;
+  padding: .5rem 1rem;
+}
+
+.nav-link i {
+  padding-right: 5px;
 }
 
 .nav-item .nav-link:hover {
@@ -162,11 +161,11 @@ body {
 }
 
 .nav-link, .nav-item {
-    -webkit-transition: all 300ms ease 0s;
-    -moz-transition: all 300ms ease 0s;
-    -o-transition: all 300ms ease 0s;
-    -ms-transition: all 300ms ease 0s;
-    transition: all 300ms ease 0s;
+  -webkit-transition: all 300ms ease 0s;
+  -moz-transition: all 300ms ease 0s;
+  -o-transition: all 300ms ease 0s;
+  -ms-transition: all 300ms ease 0s;
+  transition: all 300ms ease 0s;
 }
 
 /* ICONS */
@@ -176,11 +175,9 @@ body {
 }
 
 .navbar .navbar-nav .nav-link:not(.btn) i.fab {
-    font-size: 22px;
-    position: relative;
-    /* top: 3px; */
-    text-align: center;
-    /* width: 21px; */
+  font-size: 22px;
+  position: relative;
+  text-align: center;
 }
 
 /* ------------------- M A S T H E A D ------------------- */
@@ -250,6 +247,16 @@ body {
 }
 
 .slide .title {
-  font-size: 5.7em;
+  font-weight: 200 !important;
   text-align: center;
+}
+
+.slide .about {
+  font-size: 5.5em !important;
+}
+
+/* ------------------- S L I D E 2 ------------------- */
+
+.slide .exp {
+  font-size: 4em !important;
 }
