@@ -207,6 +207,14 @@ body {
   .vertical-nav {
     display: inline;
   }
+
+  .nav-link p {
+    font-size: 1.2em;
+  }
+
+  .nav-link i {
+    font-size: 1.2em;
+  }
 }
 
 /* ICONS */
@@ -219,6 +227,12 @@ body {
   font-size: 22px;
   position: relative;
   text-align: center;
+}
+
+@media (max-width: 992px) {
+  .navbar .navbar-nav .nav-link:not(.btn) i.fab {
+    font-size: 1.5em;
+  }
 }
 
 /* ------------------- M A S T H E A D ------------------- */
@@ -270,6 +284,15 @@ body {
   max-width: 880px;
 }
 
+@media (max-width: 992px){
+  .masthead .content-center {
+    top: 30%;
+  }
+
+  .typed_wrap {
+    font-size: 1.5em !important;
+  }
+}
 /* ------------------- S L I D E 1 ------------------- */
 
 .slide {
@@ -290,16 +313,11 @@ body {
 .slide .title {
   font-weight: 200 !important;
   text-align: center;
+
 }
 
-.slide .about {
-  font-size: 5.5em !important;
-}
-
-/* ------------------- S L I D E 2 ------------------- */
-
-.slide .exp {
-  font-size: 4em !important;
+.slide .about, .slide .exp {
+  font-size: 5em !important;
 }
 
 /* ------------------- S L I D E 2 : T I M E L I N E ------------------- */
@@ -308,15 +326,8 @@ body {
   padding-top: 50px;
 }
 
-.timeline h2 {
-  font-size: 4em !important;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  margin: 0px;
-}
-
 .timeline .single h3 {
-  font-size: 2.5em !important;
+  font-size: 2.5em;
   float: right;
 }
 
@@ -348,7 +359,7 @@ body {
   display: none;
 }
 
-@media (max-width: 768px){
+@media (max-width: 992px){
   .large-screen {
     display: none;
   }
