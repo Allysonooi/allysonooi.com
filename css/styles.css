@@ -112,13 +112,14 @@ body {
 .small-desc {
   display: none;
 }
+
 @media (max-width: 992px){
   .large-desc {
-    display: none;
+    display: none !important;
   }
 
   .small-desc {
-    display: block;
+    display: block !important;
   }
 }
 
@@ -287,9 +288,19 @@ body {
   max-width: 880px;
 }
 
-@media (max-width: 992px){
+@media (max-width: 768px){
   .masthead .content-center {
     top: 0%;
+  }
+
+  .index .masthead {
+    height: 110vh;
+  }
+}
+
+@media (max-width: 992px){
+  .masthead .content-center {
+    top: 25%;
   }
 }
 /* ------------------- S L I D E 1 ------------------- */
@@ -312,14 +323,13 @@ body {
 .slide .title {
   font-weight: 200 !important;
   text-align: center;
-
 }
 
 .slide .about, .slide .exp {
   font-size: 5em !important;
 }
 
-@media (max-width: 992px){
+@media (max-width: 768px){
   .slide .about, .slide .exp {
     font-size: 3.5em !important;
   }
@@ -374,7 +384,8 @@ body {
     padding-bottom: 10px;
     display: block;
   }
-
+}
+@media (max-width: 768px){
   .timeline .single h3 {
     font-size: 1.7em;
     float: right;
