@@ -105,6 +105,23 @@ body {
   margin-right: auto!important;
 }
 
+.large-desc {
+  display: block;
+}
+
+.small-desc {
+  display: none;
+}
+@media (max-width: 992px){
+  .large-desc {
+    display: none;
+  }
+
+  .small-desc {
+    display: block;
+  }
+}
+
 /* ------------------- N A V B A R ------------------- */
 
 .menu {
@@ -207,14 +224,6 @@ body {
   .vertical-nav {
     display: inline;
   }
-
-  .nav-link p {
-    font-size: 1.2em;
-  }
-
-  .nav-link i {
-    font-size: 1.2em;
-  }
 }
 
 /* ICONS */
@@ -227,12 +236,6 @@ body {
   font-size: 22px;
   position: relative;
   text-align: center;
-}
-
-@media (max-width: 992px) {
-  .navbar .navbar-nav .nav-link:not(.btn) i.fab {
-    font-size: 1.5em;
-  }
 }
 
 /* ------------------- M A S T H E A D ------------------- */
@@ -286,11 +289,7 @@ body {
 
 @media (max-width: 992px){
   .masthead .content-center {
-    top: 30%;
-  }
-
-  .typed_wrap {
-    font-size: 1.5em !important;
+    top: 0%;
   }
 }
 /* ------------------- S L I D E 1 ------------------- */
@@ -318,6 +317,12 @@ body {
 
 .slide .about, .slide .exp {
   font-size: 5em !important;
+}
+
+@media (max-width: 992px){
+  .slide .about, .slide .exp {
+    font-size: 3.5em !important;
+  }
 }
 
 /* ------------------- S L I D E 2 : T I M E L I N E ------------------- */
@@ -369,6 +374,15 @@ body {
     padding-bottom: 10px;
     display: block;
   }
+
+  .timeline .single h3 {
+    font-size: 1.7em;
+    float: right;
+  }
+
+  .timeline .single h4{
+    font-size: 1.2em;
+  }
 }
 
 /* ------------------- F O O T E R ------------------- */
@@ -389,6 +403,10 @@ footer h3 {
 
 .footer-description {
   font-size: 2em;
+}
+
+.coffee {
+  padding-bottom: 15px;
 }
 
 .fa-coffee {
